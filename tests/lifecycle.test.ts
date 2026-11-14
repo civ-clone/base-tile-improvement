@@ -71,7 +71,7 @@ describe('lifecycle', (): void => {
         engine
       );
 
-    // civ1-world's shape: four rules with no ids, then one per replacement.
+    // civ1-world's shape: three rules with no ids, then one per replacement.
     expect(rules.length).to.equal(5);
     expect(rules.every((rule) => rule instanceof Built)).to.true;
     expect(rules.map((rule) => rule.id())).to.deep.equal([
